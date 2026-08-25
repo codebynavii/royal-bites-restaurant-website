@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Royal Bites</title>
+    <meta name="description" content="Review your Royal Bites cart, apply a coupon and proceed to checkout.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2" data-bs-theme="light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="royalogo.png" alt="Royal Bites">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link nav-cart-link" href="cart.html" aria-label="View cart">
+                            <i class="bi bi-cart3"></i>
+                            <span class="nav-cart-badge">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="order.html" class="btn btn-order-now">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <nav aria-label="breadcrumb" class="rb-breadcrumb py-2">
+            <div class="container">
+                <ol class="breadcrumb mb-0 small">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="py-5">
+            <div class="container">
+
+                <h2 class="section-title mb-4">Your Cart</h2>
+
+                <div id="cartContent">
+                    <!-- Populated by cart.js render -->
+                </div>
+
+                <div id="cartEmptyState" class="empty-state d-none">
+                    <div class="emoji mb-3">🛒</div>
+                    <h4 class="fw-bold">Your Cart Is Empty</h4>
+                    <p class="text-muted">Looks like you haven't added anything yet.</p>
+                    <a href="menu.html" class="btn btn-danger btn-lg rounded-pill px-5 mt-2">Explore Menu</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-5 border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="royalogo.png" alt="Royal Bites" style="height:44px;">
+                    </a>
+                    <p class="text-muted small">Premium crispy fried chicken, burgers, buckets & combos - freshly prepared and delivered hot to your door.</p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold text-uppercase mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="menu.html">Menu</a></li>
+                        <li class="mb-2"><a href="offers.html">Offers</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold text-uppercase mb-3">Help</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="contact.html">FAQ</a></li>
+                        <li class="mb-2"><a href="order.html">Delivery</a></li>
+                        <li class="mb-2"><a href="orders.html">My Orders</a></li>
+                        <li class="mb-2"><a href="contact.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold text-uppercase mb-3">Contact</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary-rb"></i>+91 6382274431</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary-rb"></i>info@royalbites.com</li>
+                        <li class="mb-2"><i class="bi bi-clock-fill me-2 text-primary-rb"></i>10 AM - 11 PM Daily</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold text-uppercase mb-3">Visit Us</h6>
+                    <p class="text-muted small mb-0"><i class="bi bi-geo-alt-fill me-2 text-primary-rb"></i>Main Road, Hyderabad, Telangana, India</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-muted small">
+                © 2026 Royal Bites. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function () {
+            const contentEl = document.getElementById("cartContent");
+            const emptyEl = document.getElementById("cartEmptyState");
+
+            function render() {
+                const totals = calculateTotals();
+
+                if (totals.items.length === 0) {
+                    contentEl.innerHTML = "";
+                    emptyEl.classList.remove("d-none");
+                    return;
+                }
+                emptyEl.classList.add("d-none");
+
+                let rows = "";
+                totals.items.forEach(function (i) {
+                    rows +=
+                        '<div class="d-flex align-items-center justify-content-between border-bottom py-3 cart-item-row flex-wrap gap-3" data-id="' + i.product.id + '">' +
+                        '<div class="d-flex align-items-center gap-3" style="min-width:220px;">' +
+                        '<img src="' + i.product.image + '" alt="' + i.product.name + '">' +
+                        '<div><h6 class="fw-bold mb-1">' + i.product.name + '</h6><small class="text-muted">' + formatPrice(i.product.price) + ' each</small></div>' +
+                        '</div>' +
+                        '<div class="qty-control">' +
+                        '<button type="button" class="qty-minus" aria-label="Decrease quantity">−</button>' +
+                        '<span class="qty-value">' + i.qty + '</span>' +
+                        '<button type="button" class="qty-plus" aria-label="Increase quantity">+</button>' +
+                        '</div>' +
+                        '<div class="fw-bold" style="min-width:90px;">' + formatPrice(i.lineTotal) + '</div>' +
+                        '<button class="btn btn-sm btn-outline-danger remove-item-btn" aria-label="Remove ' + i.product.name + '"><i class="bi bi-trash"></i></button>' +
+                        '</div>';
+                });
+
+                const couponRow = totals.couponCode
+                    ? '<div class="d-flex justify-content-between mb-2 text-success"><span>Coupon (' + totals.couponCode + ')</span><span>− ' + formatPrice(totals.discount) + '</span></div>'
+                    : '';
+
+                contentEl.innerHTML =
+                    '<div class="row g-4">' +
+                    '<div class="col-lg-8">' +
+                    '<div class="card border-0 shadow-sm rounded-4 p-4">' + rows +
+                    '<div class="d-flex justify-content-between pt-4">' +
+                    '<a href="menu.html" class="btn btn-outline-danger rounded-pill px-4">Continue Shopping</a>' +
+                    '<button id="clearCartBtn" class="btn btn-link text-muted text-decoration-none">Clear Cart</button>' +
+                    '</div>' +
+                    '</div></div>' +
+                    '<div class="col-lg-4">' +
+                    '<div class="card border-0 shadow-sm rounded-4 p-4">' +
+                    '<h5 class="fw-bold mb-3">Order Summary</h5>' +
+                    '<form id="cartCouponForm" class="d-flex gap-2 mb-3">' +
+                    '<input type="text" id="cartCouponInput" class="form-control text-uppercase" placeholder="Coupon code" value="' + (totals.couponCode || "") + '">' +
+                    '<button class="btn btn-outline-danger" type="submit">Apply</button>' +
+                    '</form>' +
+                    '<div class="d-flex justify-content-between mb-2"><span>Subtotal</span><span>' + formatPrice(totals.subtotal) + '</span></div>' +
+                    couponRow +
+                    '<div class="d-flex justify-content-between mb-2"><span>Delivery</span><span>' + (totals.delivery === 0 ? "FREE" : formatPrice(totals.delivery)) + '</span></div>' +
+                    '<div class="d-flex justify-content-between mb-2"><span>GST (5%)</span><span>' + formatPrice(totals.gst) + '</span></div>' +
+                    '<hr>' +
+                    '<div class="d-flex justify-content-between mb-4"><h5 class="fw-bold">Total</h5><h5 class="fw-bold text-primary-rb">' + formatPrice(totals.total) + '</h5></div>' +
+                    '<a href="order.html" class="btn btn-danger btn-lg w-100 rounded-pill">Proceed To Checkout</a>' +
+                    (totals.subtotal < FREE_DELIVERY_THRESHOLD && totals.subtotal > 0
+                        ? '<p class="text-muted small text-center mt-3 mb-0">Add ' + formatPrice(FREE_DELIVERY_THRESHOLD - totals.subtotal) + ' more for FREE delivery</p>'
+                        : '') +
+                    '</div></div>' +
+                    '</div>';
+
+                bindRowEvents();
+                bindCouponForm();
+                document.getElementById("clearCartBtn").addEventListener("click", function () {
+                    clearCart();
+                    showToast("Cart cleared", "dark");
+                    render();
+                });
+            }
+
+            function bindRowEvents() {
+                contentEl.querySelectorAll(".cart-item-row").forEach(function (row) {
+                    const id = row.dataset.id;
+                    row.querySelector(".qty-plus").addEventListener("click", function () {
+                        increaseQuantity(id);
+                        render();
+                    });
+                    row.querySelector(".qty-minus").addEventListener("click", function () {
+                        decreaseQuantity(id);
+                        render();
+                    });
+                    row.querySelector(".remove-item-btn").addEventListener("click", function () {
+                        removeFromCart(id);
+                        showToast("Removed from cart", "dark");
+                        render();
+                    });
+                });
+            }
+
+            function bindCouponForm() {
+                const form = document.getElementById("cartCouponForm");
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const input = document.getElementById("cartCouponInput");
+                    const result = applyCoupon(input.value);
+                    showToast(result.message, result.success ? "success" : "danger");
+                    render();
+                });
+            }
+
+            render();
+        })();
+    </script>
+</body>
+
+</html>
